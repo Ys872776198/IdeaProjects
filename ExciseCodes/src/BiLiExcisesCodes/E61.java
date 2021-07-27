@@ -23,7 +23,7 @@ public class E61 {
     }
 
     public int Sub(int a, int b){
-//        System.out.println("相减的结果：" + (a - b));
+        System.out.println("相减的结果：" + (a - b));
         return (a - b);
     }
 
