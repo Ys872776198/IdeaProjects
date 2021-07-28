@@ -37,7 +37,7 @@ public class E15 {
 //                System.out.println("a:" + a);
 
 //                System.out.println("请输入配料信息：");
-//                String a = sc.nextLine();     //输入不能有空格，空格为结束符，空格后面不能有东西
+//                String a = sc.next();     //输入不能有空格，空格为结束符，空格后面不能有东西
                 System.out.println("请输入披萨大小：");
                 int b = sc.nextInt();
                 System.out.println("请输入披萨价格：");
