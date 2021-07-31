@@ -29,6 +29,10 @@ public interface Interface {
 interface Interface2{
     public abstract void fly();
 
+    public default void Book(){
+        System.out.println("龙族");
+    }
+
 }
 
 abstract class F_test1{

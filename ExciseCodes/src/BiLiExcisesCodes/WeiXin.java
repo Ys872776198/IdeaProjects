@@ -8,8 +8,13 @@ package BiLiExcisesCodes;
  */
 //微信
 public class WeiXin extends MeiTuan{
+//    int i ;
     @Override
     public void Pay() {
         System.out.println("我选择微信支付");
     }
+
+//    public WeiXin(int i) {
+//        this.i = i;
+//    }
 }
