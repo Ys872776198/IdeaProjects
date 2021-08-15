@@ -8,17 +8,17 @@ package BiLiExcisesCodes;
  */
 public class E13 {
 
-//    public static void main(String[] args){
-//        Boy boy = new Boy();
-//
+    public static void main(String[] args){
+        Boy boy = new Boy();
+
 //        Cat cat = new Cat();
 //        Animal an = cat;
-//
-////        Dog dog = new Dog();
-////        Animal an = dog;
-//
+
+//        Dog dog = new Dog();
+//        Animal an = dog;
+
 //        boy.Play(an);
-//
-//    }
+
+    }
 
 }
