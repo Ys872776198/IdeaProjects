@@ -18,7 +18,7 @@ public class E22 {
     public static void main(String[] args) {
 //        util --> sql
 //        1、利用构造器
-//        java.util.Date ud1 = new java.util.Date();
+        java.util.Date ud1 = new java.util.Date();
 //        Date sd2 = new Date(ud1.getTime());
 //        System.out.println(ud1.getTime());
 //        System.out.println(sd2);
@@ -55,16 +55,17 @@ public class E22 {
 //        为了灵活设置时间的格式，引入：DataFormat类，DataFormat类为抽象类，不能声明对象，只能向上转型，调用子类SimpleDateFormat
 //            设置格式化的标准
 //        DateFormat df = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss");
-//        String --> Date
+//        String --> java.util.Date
 //        try {
-//            Date d = df.parse("1010/10/10 18:18:18");
+//            //df.parse返回的是java.util.Date
+//            java.util.Date d = df.parse("1010/10/10 18:18:18");
 //            System.out.println("时间：" + d.toString());
 //        } catch (ParseException e) {
 //            e.printStackTrace();
 //        }
 
-//        Date ——> String
-//       String s = df.format(new Date());
+//        java.util.Date ——> String
+//       String s = df.format(new java.util.Date());
 //       System.out.println("时间：" + s.toString() );
 //       Date d = new Date();
 //       System.out.println("当前时间:" + d.toString());
