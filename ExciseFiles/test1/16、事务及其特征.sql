@@ -1,0 +1,35 @@
+-- 事务：是用来维护数据库完整性，它能够保证一系列的MySQL操作要么全部执行，要么全部不执行
+-- 事务的四大特性：原子性，一致性，隔离性，持久性，共称ACID特性
+
+
+-- 创建账户表
+CREATE TABLE ACCOUNT(
+ID INT PRIMARY KEY AUTO_INCREMENT,
+UNAME VARCHAR(10) NOT NULL,
+BALANCE DOUBLE
+)
+
+INSERT INTO ACCOUNT VALUES(NULL, "LILI", 5000);
+INSERT INTO ACCOUNT VALUES(NULL, "NENE", 5000);
+
+SELECT * FROM ACCOUNT;
+
+
+-- 转账操作
+UPDATE ACCOUNT SET BALANCE = BALANCE - 500 WHERE UNAME = "LILI";	-- 这是两个事务 事务一
+UPDATE ACCOUNT SET BALANCE = BALANCE + 500 WHERE UNAME = "NENE";	-- 事务二
+
+-- 将两个事务控制在一个事务当中
+-- 	手动开启事务
+START TRANSACTION;
+
+-- 	事务内容
+UPDATE ACCOUNT SET BALANCE = BALANCE - 500 WHERE UNAME = "LILI";
+UPDATE ACCOUNT SET BALANCE = BALANCE + 500 WHERE UNAME = "NENE";
+
+-- 	手动回滚:将刚才执行的操作全部取消
+ROLLBACK;
+
+-- 	手动提交：实际修改的所有数据提交到数据库中（缓存库 -> 实际库 此时数据库的内容才真正被修改）
+COMMIT;
+

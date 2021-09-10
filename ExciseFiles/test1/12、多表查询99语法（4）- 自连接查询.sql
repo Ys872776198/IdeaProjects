@@ -1,0 +1,14 @@
+-- 自连接：自己参照自己
+SELECT *
+FROM EMP;
+
+-- 查询员工编号，员工姓名，领导编号，领导姓名
+SELECT EMP1.EMPNO 员工编号, EMP1.ENAME 员工姓名, EMP1.MGR 领导编号, EMP2.ENAME 领导姓名
+FROM EMP EMP1
+LEFT OUTER JOIN EMP EMP2
+ON (EMP1.MGR = EMP2.EMPNO);
+
+
+
+
+
