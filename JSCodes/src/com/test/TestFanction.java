@@ -23,7 +23,7 @@ public class TestFanction {
     @Test
     public void testFindEmpByEmpno(){
         EmpDao ed = new EmpDaoImpl();
-        Emp emp = ed.FindEmpByEmpno(9999);
+        Emp emp = ed.FindEmpByEmpno(8888);
         System.out.println(emp);
     }
 
