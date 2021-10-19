@@ -7,6 +7,8 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
       <module fileurl="file://$PROJECT_DIR$/JSCodes/JSCodes.iml" filepath="$PROJECT_DIR$/JSCodes/JSCodes.iml" />
       <module fileurl="file://$PROJECT_DIR$/MyMaven/MyMaven.iml" filepath="$PROJECT_DIR$/MyMaven/MyMaven.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyMavenWeb/MyMavenWeb.iml" filepath="$PROJECT_DIR$/MyMavenWeb/MyMavenWeb.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCode/SpringCode.iml" filepath="$PROJECT_DIR$/SpringCode/SpringCode.iml" />
     </modules>
   </component>
 </project>

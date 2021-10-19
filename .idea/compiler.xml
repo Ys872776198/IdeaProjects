@@ -7,10 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MyMaven" />
+        <module name="SpringCode" />
+        <module name="MyMavenWeb" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="MyMaven" target="1.7" />
+      <module name="MyMavenWeb" target="1.7" />
+      <module name="SpringCode" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

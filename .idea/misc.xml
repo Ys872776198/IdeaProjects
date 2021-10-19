@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/MyMavenWeb" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringCode" />
+  </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
   </component>
@@ -7,6 +11,8 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/MyMaven/pom.xml" />
+        <option value="$PROJECT_DIR$/MyMavenWeb/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCode/pom.xml" />
       </list>
     </option>
   </component>
