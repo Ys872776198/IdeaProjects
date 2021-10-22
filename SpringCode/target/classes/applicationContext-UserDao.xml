@@ -29,7 +29,9 @@
                 <prop key="333">行</prop>
             </props>
         </property>
-
     </bean>
+
+    <!--    导入配置文件（类似于导包） -->
+    <import resource="applicationContext-user.xml"></import>
 
 </beans>

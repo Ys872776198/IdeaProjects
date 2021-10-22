@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="MyMaven" />
         <module name="SpringCode" />
+        <module name="SpringCode2" />
         <module name="MyMavenWeb" />
       </profile>
     </annotationProcessing>
@@ -15,6 +16,7 @@
       <module name="MyMaven" target="1.7" />
       <module name="MyMavenWeb" target="1.7" />
       <module name="SpringCode" target="1.7" />
+      <module name="SpringCode2" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

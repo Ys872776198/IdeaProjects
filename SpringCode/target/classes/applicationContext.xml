@@ -14,7 +14,7 @@
 <!--    利用Set方法注入依赖-->
 <!--    <bean id = "userService" class= "com.Service.impl.UserServiceImpl">-->
 <!--        <property name="userDao" ref="userDao"></property>-->
-<!--&lt;!&ndash;        ref指代引用的bean id &ndash;&gt;-->
+<!--&lt;!&ndash;        ref指代引用的对象的值（bean id） &ndash;&gt;-->
 <!--&lt;!&ndash;        property name指的是set方法的名称（是指set后面的名称，且首字母小写）&ndash;&gt;-->
 <!--    </bean>-->
 
@@ -29,7 +29,8 @@
         <property name="userDao" ref="userDao"></property>
     </bean>
 
-    <import resource="applicationContext-user.xml"></import>
+<!--    导入配置文件（类似于导包） -->
+<!--    <import resource="applicationContext-user.xml"></import>-->
     <import resource="applicationContext-UserDao.xml"></import>
 
 </beans>
