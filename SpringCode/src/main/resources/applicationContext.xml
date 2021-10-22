@@ -25,46 +25,12 @@
 <!--        &lt;!&ndash;        constructor-arg name指的是 构造器入参名称 &ndash;&gt;-->
 <!--    </bean>-->
 
-    <bean id = "userDao" class= "com.dao.impl.UserDaoImpl" >
-        <property name="name" value="nene"></property>
-        <property name="age" value="18"></property>
-
-        <property name="stringlist">
-            <list>
-                <value>我</value>
-                <value>可</value>
-                <value>以</value>
-            </list>
-        </property>
-
-        <property name="userMap">
-            <map>
-                <entry key="001" value-ref="user1"></entry>
-                <entry key="002" value-ref="user2"></entry>
-            </map>
-        </property>
-
-        <property name="prop">
-            <props>
-                <prop key="111">我</prop>
-                <prop key="222">能</prop>
-                <prop key="333">行</prop>
-            </props>
-        </property>
-
-    </bean>
-
     <bean id = "userService" class="com.Service.impl.UserServiceImpl">
         <property name="userDao" ref="userDao"></property>
     </bean>
 
-    <bean id = "user1" class= "com.Demo.User">
-        <property name="name" value="haha"></property>
-        <property name="age" value="19"></property>
-    </bean>
-    <bean id = "user2" class= "com.Demo.User">
-        <property name="name" value="lala"></property>
-        <property name="age" value="20"></property>
-    </bean>
+<!--    导入配置文件（类似于导包） -->
+    <import resource="applicationContext-user.xml"></import>
+    <import resource="applicationContext-UserDao.xml"></import>
 
 </beans>

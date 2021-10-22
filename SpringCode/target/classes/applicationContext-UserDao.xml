@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id = "userDao" class= "com.dao.impl.UserDaoImpl" >
+        <property name="name" value="nene"></property>
+        <property name="age" value="18"></property>
+
+        <property name="stringlist">
+            <list>
+                <value>我</value>
+                <value>可</value>
+                <value>以</value>
+            </list>
+        </property>
+
+        <property name="userMap">
+            <map>
+                <entry key="001" value-ref="user1"></entry>
+                <entry key="002" value-ref="user2"></entry>
+            </map>
+        </property>
+
+        <property name="prop">
+            <props>
+                <prop key="111">我</prop>
+                <prop key="222">能</prop>
+                <prop key="333">行</prop>
+            </props>
+        </property>
+
+    </bean>
+
+</beans>
