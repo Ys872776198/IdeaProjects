@@ -13,4 +13,16 @@ public class UserDaoImpl implements UserDao {
     public void save() {
         System.out.println("helloSpring!!");
     }
+
+    public UserDaoImpl() {
+        System.out.println("创建了UserDaoImpl。。。。");
+    }
+
+    public void init(){
+        System.out.println("初始化。。。。。");
+    }
+    public void destory(){
+        System.out.println("销毁了。。。。。");
+    }
+
 }

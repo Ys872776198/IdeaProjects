@@ -3,6 +3,26 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id = "userDao" class= "com.dao.impl.UserDaoImpl"></bean>
+<!--    <bean id = "userDao" class= "com.dao.impl.UserDaoImpl" scope="singleton" init-method="init" destroy-method="destory"></bean>-->
+<!--    工厂静态方法实例化-->
+<!--    <bean id = "userDao" class= "com.Factory.StaticFactory" factory-method="UserDao"></bean>-->
+<!--    工厂实例方法实例化-->
+<!--    <bean id = "factory" class= "com.Factory.StaticFactory"></bean>-->
+<!--    <bean id = "userDao" factory-bean="factory" factory-method="UserDao"></bean>-->
+
+    <bean id = "userDao" class= "com.dao.impl.UserDaoImpl"  ></bean>
+<!--    利用Set方法注入依赖-->
+<!--    <bean id = "userService" class= "com.Service.impl.UserServiceImpl">-->
+<!--        <property name="userDao" ref="userDao"></property>-->
+<!--&lt;!&ndash;        ref指代引用的bean id &ndash;&gt;-->
+<!--&lt;!&ndash;        property name指的是set方法的名称（是指set后面的名称，且首字母小写）&ndash;&gt;-->
+<!--    </bean>-->
+
+<!--    利用构造方法注入依赖-->
+    <bean id = "userService" class= "com.Service.impl.UserServiceImpl">
+        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+        <!--        ref指代引用的bean id -->
+        <!--        constructor-arg name指的是 构造器入参名称 -->
+    </bean>
 
 </beans>
