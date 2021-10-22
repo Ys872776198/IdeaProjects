@@ -14,9 +14,9 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class UserServiceImpl implements UserServiceDao {
 
     private  UserDao UserDao;
-//    public void setUserDao(UserDao ud) {
-//        this.UserDao = ud;
-//    }
+    public void setUserDao(UserDao ud) {
+        this.UserDao = ud;
+    }
 
 
     public UserServiceImpl(com.dao.UserDao userDao) {
