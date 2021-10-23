@@ -8,8 +8,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.beans.PropertyVetoException;
-import java.sql.Connection;
-import java.sql.SQLException;
+import java.sql.*;
 import java.util.ResourceBundle;
 
 /**
@@ -59,9 +58,41 @@ public class CodeTest {
         ApplicationContext app = new ClassPathXmlApplicationContext("applicationContext.xml");
         ComboPooledDataSource cp = (ComboPooledDataSource)app.getBean("c3p0");
         Connection cn = cp.getConnection();
-        System.out.println(cn);
-        cn.close();
+//        System.out.println(cn);
+//        cn.close();
 
+//        PreparedStatement ps = cn.prepareStatement("select * from dept where deptno = ?");
+//        ps.setInt(1, 10);
+//        ResultSet rs = ps.executeQuery();
+//        if (rs.next()){
+//            int deptno = rs.getInt(1);      //这里面的 1 代表查询结果的第一行，同时获取的类型要和数据库对应的类型一致,将结果集放到循环中
+//            String dname = rs.getString(2);
+//            String loc = rs.getString(3);
+//
+//            System.out.println(deptno + "\t" + dname + "\t" + loc);
+//
+//            System.out.println("账号存在，登录成功！");
+//        }else {
+//            System.out.println("账号不存在，登录失败！");
+//        }
+//
+//        rs.close();
+//        ps.close();
+//        cn.close();
+
+//        Statement st = cn.createStatement();
+//        String sql = "delete from emp where empno = 8888";
+//        int i = st.executeUpdate(sql);
+////        System.out.println("i" + i);
+//
+//        if (i > 0){
+//            System.out.println("删除成功！");
+//        }else {
+//            System.out.println("删除失败！");
+//        }
+//
+//        st.close();
+//        cn.close();
 
     }
 
