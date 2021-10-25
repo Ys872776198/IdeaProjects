@@ -19,6 +19,12 @@
           <element id="library" level="project" name="Maven: com.mchange:c3p0:0.9.5.2" />
           <element id="library" level="project" name="Maven: com.mchange:mchange-commons-java:0.2.11" />
           <element id="library" level="project" name="Maven: com.alibaba:druid:1.1.10" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.0.5.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">

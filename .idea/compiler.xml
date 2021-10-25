@@ -10,6 +10,7 @@
         <module name="SpringCode" />
         <module name="SpringCode2" />
         <module name="MyMavenWeb" />
+        <module name="SpringCode3_Anno" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,7 @@
       <module name="MyMavenWeb" target="1.7" />
       <module name="SpringCode" target="1.7" />
       <module name="SpringCode2" target="1.7" />
+      <module name="SpringCode3_Anno" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

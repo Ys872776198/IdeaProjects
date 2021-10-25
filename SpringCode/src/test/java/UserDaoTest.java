@@ -2,6 +2,7 @@ import com.Service.UserServiceDao;
 import com.dao.UserDao;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
@@ -27,9 +28,10 @@ public class UserDaoTest {
 
     @Test
     public void UserServiceImplTest(){
-//        ApplicationContext接口的实现类有两个：
+//        ApplicationContext接口的实现类有三个：
 //            FileSystemXmlApplicationContext类需要填写applicationContext.xml的磁盘路劲名
 //            ClassPathXmlApplicationContext类填写的是applicationContext.xml的文件名
+//            AnnotationConfigApplicationContext类是专门加载核心配置类，且填写的是核心配置类的字节码类
 //        ApplicationContext fapp = new FileSystemXmlApplicationContext("D:\\CodeProject\\IdeaProjects\\SpringCode\\src\\main\\resources\\applicationContext.xml");
         ApplicationContext app = new ClassPathXmlApplicationContext("applicationContext.xml");
         UserServiceDao us = (UserServiceDao)app.getBean("userService");

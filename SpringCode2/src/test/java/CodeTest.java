@@ -1,3 +1,5 @@
+import Dao.UserDao;
+import Service.Impl.UserServiceImpl;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.pool.DruidPooledConnection;
 import com.mchange.v2.c3p0.ComboPooledDataSource;
@@ -137,6 +139,13 @@ public class CodeTest {
         Connection cn = dd.getConnection();
         System.out.println(cn);
         cn.close();
+    }
+
+    @Test
+    public void AnnoTest(){
+        ApplicationContext app = new ClassPathXmlApplicationContext("applicationContext.xml");
+        UserServiceImpl us = (UserServiceImpl) app.getBean("userService");
+        us.save();
     }
 
 }
