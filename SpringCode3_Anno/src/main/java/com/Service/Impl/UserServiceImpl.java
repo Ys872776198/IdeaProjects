@@ -4,10 +4,12 @@ import com.Dao.UserDao;
 import com.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import java.util.ResourceBundle;
 
 /**
  * @Auther: YS
@@ -16,6 +18,7 @@ import javax.annotation.PreDestroy;
  * @Version: 1.0
  */
 @Service("userService")
+//@PropertySource("classpath:jdbc.properties")
 public class UserServiceImpl implements UserService {
     @Autowired
     @Qualifier("userDao")
@@ -25,6 +28,9 @@ public class UserServiceImpl implements UserService {
 
     public UserServiceImpl() {
         System.out.println("我创建了UserServiceImpl");
+//        ResourceBundle rb = ResourceBundle.getBundle("jdbc");
+//        rb.getString("jdbc.driver");
+//        System.out.println(rb.getString("jdbc.driver"));
     }
 
     @PostConstruct

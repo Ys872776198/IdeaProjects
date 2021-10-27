@@ -63,24 +63,24 @@ public class CodeTest {
 //        System.out.println(cn);
 //        cn.close();
 
-//        PreparedStatement ps = cn.prepareStatement("select * from dept where deptno = ?");
-//        ps.setInt(1, 10);
-//        ResultSet rs = ps.executeQuery();
-//        if (rs.next()){
-//            int deptno = rs.getInt(1);      //这里面的 1 代表查询结果的第一行，同时获取的类型要和数据库对应的类型一致,将结果集放到循环中
-//            String dname = rs.getString(2);
-//            String loc = rs.getString(3);
-//
-//            System.out.println(deptno + "\t" + dname + "\t" + loc);
-//
-//            System.out.println("账号存在，登录成功！");
-//        }else {
-//            System.out.println("账号不存在，登录失败！");
-//        }
-//
-//        rs.close();
-//        ps.close();
-//        cn.close();
+        PreparedStatement ps = cn.prepareStatement("select * from dept where deptno = ?");
+        ps.setInt(1, 10);
+        ResultSet rs = ps.executeQuery();
+        if (rs.next()){
+            int deptno = rs.getInt(1);      //这里面的 1 代表查询结果的第一行，同时获取的类型要和数据库对应的类型一致,将结果集放到循环中
+            String dname = rs.getString(2);
+            String loc = rs.getString(3);
+
+            System.out.println(deptno + "\t" + dname + "\t" + loc);
+
+            System.out.println("账号存在，登录成功！");
+        }else {
+            System.out.println("账号不存在，登录失败！");
+        }
+
+        rs.close();
+        ps.close();
+        cn.close();
 
 //        Statement st = cn.createStatement();
 //        String sql = "delete from emp where empno = 8888";

@@ -32,5 +32,6 @@ public class CodeTest {
         DataSource ds = (DataSource)ac.getBean("dataSource");
         Connection cnn = ds.getConnection();
         System.out.println(cnn);
+        cnn.close();
     }
 }
