@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="MyMaven" />
-        <module name="SpringCode" />
+        <module name="SpringCode5_MVC" />
         <module name="SpringCode2" />
+        <module name="SpringCode" />
+        <module name="SpringCode4_Junit" />
         <module name="MyMavenWeb" />
         <module name="SpringCode3_Anno" />
       </profile>
@@ -19,6 +21,10 @@
       <module name="SpringCode" target="1.7" />
       <module name="SpringCode2" target="1.7" />
       <module name="SpringCode3_Anno" target="1.7" />
+      <module name="SpringCode4_Junit" target="1.7" />
+      <module name="SpringCode5_MVC" target="1.7" />
+      <module name="SpringCode5_MVC1" target="1.7" />
+      <module name="SpringCodec_Junit" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

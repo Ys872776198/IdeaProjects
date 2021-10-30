@@ -4,6 +4,8 @@
     <file type="web" url="file://$PROJECT_DIR$/MyMavenWeb" />
     <file type="web" url="file://$PROJECT_DIR$/SpringCode" />
     <file type="web" url="file://$PROJECT_DIR$/SpringCode2" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringCode5_MVC" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringCode5_MVC1" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
@@ -16,7 +18,14 @@
         <option value="$PROJECT_DIR$/SpringCode/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCode2/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCode3_Anno/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCode4_Junit/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCode5_MVC/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/SpringCode5_MVC1/SpringCode5_MVC/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK">

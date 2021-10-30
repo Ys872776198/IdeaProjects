@@ -11,6 +11,8 @@
       <module fileurl="file://$PROJECT_DIR$/SpringCode/SpringCode.iml" filepath="$PROJECT_DIR$/SpringCode/SpringCode.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCode2/SpringCode2.iml" filepath="$PROJECT_DIR$/SpringCode2/SpringCode2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCode3_Anno/SpringCode3_Anno.iml" filepath="$PROJECT_DIR$/SpringCode3_Anno/SpringCode3_Anno.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCode4_Junit/SpringCode4_Junit.iml" filepath="$PROJECT_DIR$/SpringCode4_Junit/SpringCode4_Junit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCode5_MVC/SpringCode5_MVC.iml" filepath="$PROJECT_DIR$/SpringCode5_MVC/SpringCode5_MVC.iml" />
     </modules>
   </component>
 </project>

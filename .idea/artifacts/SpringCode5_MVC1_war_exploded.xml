@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SpringCode5_MVC1:war exploded">
+    <output-path>$PROJECT_DIR$/SpringCode5_MVC1/target/SpringCode5_MVC1</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>SpringCode5_MVC1</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SpringCode5_MVC1" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/SpringCode5_MVC1/target/SpringCode5_MVC1/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="SpringCode5_MVC1/web/Web" />
+    </root>
+  </artifact>
+</component>
