@@ -4,6 +4,7 @@ import com.Service.UserService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -22,7 +23,7 @@ import java.sql.SQLException;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 //当使用配置文件时@ContextConfiguration注解如此使用
-//@ContextConfiguration("classes : applicationContext.xml")
+//@ContextConfiguration(classes = {SpringConfiguration.class})
 //当使用注解时@ContextConfiguration注解如此使用,{}里面是数组 如：{a.class, b.class, ....}
 @ContextConfiguration(classes = {SpringConfiguration.class})
 public class JunitTest {
@@ -31,6 +32,7 @@ public class JunitTest {
     @Autowired
     private UserService userService;
     @Autowired
+    @Qualifier("dataSource")        //@Autowired是按类型来匹配，当有多个同类型的Bean对象时，就要配合@Qualifier使用
     private DataSource dataSource;
 
     @Test

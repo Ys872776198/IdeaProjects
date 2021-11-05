@@ -3,10 +3,36 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
+<!--&lt;!&ndash;  自定义Spring集成Web代码实现&ndash;&gt;-->
+<!--&lt;!&ndash;  设置web层全局变量:将监听器获取应用上下文对象进行解耦&ndash;&gt;-->
+<!--  <context-param>-->
+<!--    <param-name>contextConfigLocationg</param-name>-->
+<!--    <param-value>applicationContext.xml</param-value>-->
+<!--  </context-param>-->
+<!--  -->
+<!--&lt;!&ndash;  设置监听器&ndash;&gt;-->
+<!--  <listener>-->
+<!--    <listener-class>com.YS.Listener.ContextLodgerListener</listener-class>-->
+<!--  </listener>-->
+
+<!--  利用Spring提供的设置实现Spring集成Web代码-->
+<!--  设置web层全局变量:将监听器获取应用上下文对象进行解耦-->
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:applicationContext.xml</param-value>
+  </context-param>
+
+<!--  配置监听器-->
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
+
   <servlet>
     <servlet-name>UserServlet</servlet-name>
     <servlet-class>com.YS.Servlet.UserServlet</servlet-class>
   </servlet>
+<!--  设置映射-->
   <servlet-mapping>
     <servlet-name>UserServlet</servlet-name>
     <url-pattern>/ut</url-pattern>
