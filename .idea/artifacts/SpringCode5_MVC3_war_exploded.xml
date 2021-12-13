@@ -1,17 +1,17 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="SpringCode5_MVC2:war exploded">
-    <output-path>$PROJECT_DIR$/SpringCode5_MVC2/target/SpringCode5_MVC2</output-path>
+  <artifact type="exploded-war" name="SpringCode5_MVC3:war exploded">
+    <output-path>$PROJECT_DIR$/SpringCode5_MVC3/target/SpringCode5_MVC3</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
-        <module>SpringCode5_MVC2</module>
+        <module>SpringCode5_MVC3</module>
         <packaging>war</packaging>
       </options>
     </properties>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
-          <element id="module-output" name="SpringCode5_MVC2" />
+          <element id="module-output" name="SpringCode5_MVC3" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:8.0.26" />
@@ -37,9 +37,9 @@
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/SpringCode5_MVC2/target/SpringCode5_MVC2/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/SpringCode5_MVC3/target/SpringCode5_MVC3/META-INF/MANIFEST.MF" />
       </element>
-      <element id="javaee-facet-resources" facet="SpringCode5_MVC2/web/Web" />
+      <element id="javaee-facet-resources" facet="SpringCode5_MVC3/web/Web" />
     </root>
   </artifact>
 </component>

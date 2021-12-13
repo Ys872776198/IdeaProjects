@@ -7,6 +7,7 @@
     <file type="web" url="file://$PROJECT_DIR$/SpringCode5_MVC" />
     <file type="web" url="file://$PROJECT_DIR$/SpringCode5_MVC1" />
     <file type="web" url="file://$PROJECT_DIR$/SpringCode5_MVC2" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringCode5_MVC3" />
     <file type="web" url="file://$PROJECT_DIR$/SpringCode5_MVC_Test" />
   </component>
   <component name="JavaScriptSettings">
@@ -24,6 +25,7 @@
         <option value="$PROJECT_DIR$/SpringCode5_MVC/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCode5_MVC2/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCode5_MVC_Test/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCode5_MVC3/pom.xml" />
       </list>
     </option>
   </component>
