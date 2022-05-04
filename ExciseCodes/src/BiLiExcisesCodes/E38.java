@@ -42,7 +42,7 @@ import java.io.*;
 //
 ////            用缓存数组来读取字符和写入字符
 //        char[] ch = new char[10];
-//        int n2 = fr.read(ch, 0,10);   //每次读取10个,方法的返回值为读取的有效长度
+//        int n2 = fr.read(ch, 0,10);   //每次读取10个,方法的返回值为读取的 有效长度
 ////       int n2 = fr.read(ch);                     //read方法中直接加入char[]代表遍历长度为数组长度(实际效果与上条代码相同)
 //
 ////        System.out.println(n2);

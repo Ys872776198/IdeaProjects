@@ -46,7 +46,7 @@ abstract class F_test1{
         this.age = age;
     }
 
-    public abstract void swing();
+    public abstract void swming();
 
 }
 
@@ -73,7 +73,7 @@ class Test1 extends F_test1 implements Interface, Interface2 {
         System.out.println("我会打游戏！");
     }
 
-    public void swing(){
+    public void swming(){
         System.out.println("我会游泳！");
     }
 

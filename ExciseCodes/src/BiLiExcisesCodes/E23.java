@@ -43,14 +43,15 @@ public class E23 {
 
 //            获取当天日期
             int newday = cal.get(Calendar.DATE);
+//            System.out.println("newday：" + Calendar.DATE);
 
 //            获取当前月份的总天数
             int sumday = cal.getActualMaximum(Calendar.DATE);
 //            System.out.println(sumday);
 
 //            获取当月1号的信息
-            cal.set(Calendar.DATE, 1);
-            int firstday = cal.get(Calendar.DAY_OF_WEEK);
+            cal.set(Calendar.DATE, 1);//将当天日期设置为1号，例如：2022-03-06 --》2022-03-01
+            int firstday = cal.get(Calendar.DAY_OF_WEEK);//这是显示当天日期属于星期几
 //            System.out.println("1号:" + firstday);
 
 //            设置日历格式

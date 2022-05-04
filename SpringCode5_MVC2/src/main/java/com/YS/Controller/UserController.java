@@ -113,9 +113,47 @@ public class UserController {
         return user;
     }
 
+//    由于S9操作繁琐，涉及的代码较多。SpringMvc提供了mvc的注解驱动<mvc:annotation-driven/> (在spring-mvc.xml中配置)
     @RequestMapping(value = {"/s10"})
     @ResponseBody
-    public String save10(){
+    public User save10(){
+        User user = new User();
+        user.setUsername("haho");
+        user.setAge(24);
+        return user;
+    }
+
+//3、获取请求数据
+//    获取普通数据类型：Controller的业务方法入参名和请求参数名一致时，参数值会自动匹配
+    @RequestMapping(value = {"/r1"})
+    @ResponseBody
+    public void save11(String username, int age){
+        System.out.println(username);
+        System.out.println(age);
+    }
+
+//    获取POJO类型数据:Controller的业务方法的POJO参数的属性名和请求参数名一致时，参数值会自动匹配
+    @RequestMapping(value = {"/r2"})
+    @ResponseBody
+    public User save12(User user){
+        return user;
+    }
+//    获取POJO类型数据:Controller的业务方法的POJO参数的属性名和请求参数名一致时，参数值会自动匹配
+    @RequestMapping(value = {"/r3"})
+    @ResponseBody
+    public String save13(){
         return "s7";
     }
+
+    @RequestMapping(value = {"/r4"})
+    @ResponseBody
+    public String save14(){
+        return "s7";
+    }
+
+
+
+
+
+
 }

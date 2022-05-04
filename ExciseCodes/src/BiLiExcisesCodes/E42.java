@@ -11,7 +11,7 @@ import java.io.*;
 //throws
 //public class E42 {
 //    public static void main(String[] args) throws IOException {
-////        功能:利用字节流复制文本文件
+////        功能:利用 字节流 复制文本文件
 ////        1、创建源文件对象和目标文件对象
 ////            创建源文件对象
 //        File f1 = new File("D:" +  File.separator + "CodeProject" +  File.separator + "IdeaProjects" +

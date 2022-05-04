@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+                            http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
 <!--    只扫描Web层-->
     <context:component-scan base-package="com.YS">
@@ -17,13 +19,18 @@
         <property name="suffix" value=".jsp"></property>
     </bean>
 
-<!--    配置处理器映射器-->
-    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
-        <property name="messageConverters">
-            <list>
-                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
-            </list>
-        </property>
-    </bean>
+<!--    过于繁琐，使用<mvc:annotation-driven/>代替-->
+<!--    < mvc的注解驱动 >-->
+<!--    在beans里面添加 xmlns:mvc="http://www.springframework.org/schema/mvc" 类似于Context操作-->
+    <mvc:annotation-driven/>
+
+<!--&lt;!&ndash;    配置处理器映射器&ndash;&gt;-->
+<!--    <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">-->
+<!--        <property name="messageConverters">-->
+<!--            <list>-->
+<!--                <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
 
 </beans>

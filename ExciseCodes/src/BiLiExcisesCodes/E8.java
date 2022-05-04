@@ -7,10 +7,11 @@ import java.util.Arrays;
  */
 public class E8 {
 	public static void main(String[] args) {
+
 		int[] arr = {180, 20, 50, 100, 10, 80};
-		
+
 		int temp;
-		
+
 		for(int i = 0; i < arr.length - 1; i++)
 		{
 			int min = i;

@@ -32,16 +32,16 @@ public class E6 {
 //		5、数组的复制
 //		arr2 = Arrays.copyOf(arr1, 15);
 //		System.out.println(Arrays.toString(arr2));
-//		
-//		int[] arr5 = Arrays.copyOfRange(arr1, 2, 4);
+
+//		int[] arr5 = Arrays.copyOfRange(arr1, 2, 5);
 //		System.out.println(Arrays.toString(arr5));
 		
 //		6、数组的填充
-		Arrays.fill(arr2, 10);
-		System.out.println(Arrays.toString(arr2));
-		
-		Arrays.fill(arr2, 2, 4, 111);
-		System.out.println(Arrays.toString(arr2));
+//		Arrays.fill(arr2, 10);
+//		System.out.println(Arrays.toString(arr2));
+
+//		Arrays.fill(arr2, 2, 4, 111);
+//		System.out.println(Arrays.toString(arr2));
 		
 	}
 }

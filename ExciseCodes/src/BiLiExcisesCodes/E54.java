@@ -42,7 +42,7 @@ class BuyTicketThread3 extends Thread {
         for(int i = 1; 1 < 101; i++){
 //            打开锁
             lock.lock();
-//            万一锁内的代码出现，那么这个锁可能就不会关闭了，因此用try-catch-finally来解决这个问题
+//            万一锁内的代码出现问题，那么这个锁可能就不会关闭了，因此用try-catch-finally来解决这个问题
             try{
                 Thread.sleep(100);           //增强效果
                 if(ticket > 0){

@@ -94,11 +94,19 @@ class E34_Main{
 //            System.out.println(i);
 //        }
 
-//        遍历集合中的Key和values
+//        法1：遍历集合中的Key和values
         Set<Map.Entry<Integer, String>> e1 = m1.entrySet();
         for(Map.Entry<Integer, String> m : e1){
             System.out.println(m.getKey() + "+" + m.getValue());
         }
-        
+
+//        法2：遍历集合
+//        先获取hashmap集合的key
+        Set<Integer> is = m1.keySet();
+//        再通过key获取集合中的value
+        for(Integer a : is){
+            System.out.println( " key " + a + " value " + m1.get(a));
+
+        }
     }
 }

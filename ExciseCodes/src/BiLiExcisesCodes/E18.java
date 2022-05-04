@@ -25,8 +25,8 @@ public class E18 {
         Interface2 i2 = new Test1();
         i2.fly();
         F_test1 t1 = t3.Ft();
-        t1.swing();
-        t3.Ft().swing();
+        t1.swming();
+        t3.Ft().swming();
 
 
     }

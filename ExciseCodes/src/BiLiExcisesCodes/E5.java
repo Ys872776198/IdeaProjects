@@ -17,7 +17,7 @@ public class E5 {
 		
 		for(int b : arr)
 		{
-			
+			System.out.println(b);
 		}
 	}
 	
