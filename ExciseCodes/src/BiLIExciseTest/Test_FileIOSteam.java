@@ -62,7 +62,7 @@ public class Test_FileIOSteam {
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
-//        3、关闭资源
+//        3、关闭资源（关闭高级流即可）
             if(bis != null){
                 try {
                     bis.close();
