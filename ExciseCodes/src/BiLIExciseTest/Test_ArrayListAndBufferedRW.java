@@ -77,7 +77,7 @@ public class Test_ArrayListAndBufferedRW {
 //
 //            String str;
 //
-//            while((str = br.readLine()) != null){
+//            while(  (str = br.readLine()) != null){
 //                al.add(str);
 //            }
 //
