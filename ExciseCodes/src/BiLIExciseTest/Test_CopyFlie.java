@@ -8,7 +8,7 @@ import java.io.*;
  * @Description: IntelliJ IDEA复制单级或者多级文件夹
  * @Version: 1.0
  */
-public class Test_CopuFlie {
+public class Test_CopyFlie {
 //    /**
 //     * 1、复制单级文件夹:
 //     *         1、创建源文件File对象，获取文件夹名称
