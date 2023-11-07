@@ -14,6 +14,9 @@ public class E14 {
         Animal an = b;
         an.Introduction();
         b.Fly();
+        /*
+        * Bird b = (Bird) new Animal();     //向下转型（类似于强制转换）
+        * */
 
         an = f;
         an.Introduction();

@@ -10,7 +10,7 @@ public class E8 {
 
 		int[] arr = {180, 20, 50, 100, 10, 80};
 
-		int temp;
+		int temp = 0;
 
 		for(int i = 0; i < arr.length - 1; i++)
 		{
