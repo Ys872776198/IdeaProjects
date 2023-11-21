@@ -10,7 +10,9 @@ public class E3 {
 	public static void numGuess(int a)
 	{
 		Scanner sc = new Scanner(System.in);
-		int num = (int)(Math.random() * 101);
+//		int num = (int)(Math.random() * 101);
+		int num =0;
+		num += (Math.random()*101);
 		System.out.println("num:" + num);
 		while(true)
 		{
