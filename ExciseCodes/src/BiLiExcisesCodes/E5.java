@@ -7,8 +7,8 @@ package BiLiExcisesCodes;
 public class E5 {
 	
 
-	public static void add(int a ,int...arr)
-//	public static void add(int...arr)
+//	public static void add(int a ,int...arr)
+	public static void add(int...arr)
 	{
 		System.out.println("数组的长度：" + arr.length);
 		
